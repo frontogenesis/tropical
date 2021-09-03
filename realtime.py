@@ -6,8 +6,6 @@ warnings.filterwarnings('ignore', category=UserWarning)
 data = realtime.Realtime()
 storms_list = data.list_active_storms()
 
-data.download_graphic_realtime()
-
 def choose_basin(basin='AL'):
     '''Returns Atlantic (AL) or Eastern Pacific (EP) storms'''
     storm_metadata = []
